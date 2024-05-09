@@ -1,6 +1,6 @@
 
 import { getServerSession } from "next-auth";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "../components/navigation/Navbar";
 import { authOptions } from "./api/auth/[...nextauth]/route";
 import { User } from "./user";
 import { LoginButton, LogoutButton } from "./auth";
