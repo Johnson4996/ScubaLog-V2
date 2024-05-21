@@ -1,6 +1,8 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
+import { LoginButton } from "@/app/auth";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,7 @@ export const Navbar = () => {
                 <Link rel="stylesheet" className="mx-2 hover:text-gray-300" href="/">Home</Link>
                 <Link rel="stylesheet" className="mx-2 hover:text-gray-300" href="/about">About</Link>
                 <Link rel="stylesheet" className="mx-2 hover:text-gray-300" href="/contact">Contact</Link>
-                <Link rel="stylesheet" className="mx-2 hover:text-gray-300" href="/login">Login</Link>
+                <LoginButton />
             </div>
 
             <div className="md:hidden flex items-center">
